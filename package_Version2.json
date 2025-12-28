@@ -1,0 +1,19 @@
+{
+  "name": "beyblade-wa-bot",
+  "version": "1.0.0",
+  "description": "WhatsApp bot simple using Baileys - template repo pour déploiement facile",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "NODE_ENV=development node index.js",
+    "generate:commands": "node tools/generate-commands.js"
+  },
+  "dependencies": {
+    "@adiwajshing/baileys": "^4.0.0",
+    "pino": "^8.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
