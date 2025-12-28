@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  bot:
+    build: .
+    container_name: beyblade-wa-bot
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - PREFIX=${PREFIX:-!}
+    volumes:
+      - ./auth:/app/auth
+      - ./logs:/app/logs
+    ports:
+      - "3000:3000"
